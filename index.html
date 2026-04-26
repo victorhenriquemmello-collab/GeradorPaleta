@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Paleta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Gerador de Paleta</h1>
+        
+        <label for="upload" class="drop-zone">
+            <span>Clique ou arraste uma foto aqui</span>
+            <input type="file" id="upload" accept="image/*" hidden>
+        </label>
+
+        <div id="preview-container">
+            <img id="img-preview" src="" alt="">
+            <canvas id="canvas" style="display: none;"></canvas>
+        </div>
+
+        <div id="palette" class="palette-grid">
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
